@@ -22,7 +22,7 @@ public class AppInitializer extends Application {
         Parent root = FXMLLoader.load(this.getClass().getResource("view/LoginForm.fxml"));
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
-        primaryStage.setTitle("Login Form");
+        primaryStage.setTitle("Login Forms");
         primaryStage.centerOnScreen();
         primaryStage.show();
 
