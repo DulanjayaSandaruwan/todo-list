@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="477.0" prefWidth="754.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ToDoFormController">
+    <children>
+        <ListView fx:id="lstToDos" layoutX="2.0" layoutY="4.0" prefHeight="452.0" prefWidth="349.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ListView>
+        <Button fx:id="btnUpdate" layoutX="653.0" layoutY="113.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="26.0" prefWidth="104.0" style="-fx-background-color: #009933;" text="Update" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="btnDelete" layoutX="530.0" layoutY="113.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="26.0" prefWidth="104.0" style="-fx-background-color: #cc0000;" text="Delete" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND" />
+            </cursor>
+        </Button>
+        <Separator layoutX="355.0" layoutY="147.0" prefHeight="26.0" prefWidth="405.0" />
+        <Button layoutX="361.0" layoutY="182.0" mnemonicParsing="false" onAction="#btnAddNewToDoOnAction" prefHeight="35.0" prefWidth="160.0" style="-fx-background-color: #003399;" text="+ Add New ToDo" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND" />
+            </cursor>
+        </Button>
+        <Pane fx:id="paneAddNewToDo" layoutX="361.0" layoutY="231.0" prefHeight="147.0" prefWidth="396.0" style="-fx-border-color: #000000;">
+            <children>
+                <TextField fx:id="txtNewToDO" layoutX="9.0" layoutY="30.0" prefHeight="28.0" prefWidth="379.0" />
+                <Button layoutX="276.0" layoutY="84.0" mnemonicParsing="false" onAction="#btnAddToListOnActon" prefHeight="26.0" prefWidth="113.0" style="-fx-background-color: #009933;" text="Add To List" textFill="WHITE">
+                    <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                    </cursor>
+                </Button>
+            </children>
+        </Pane>
+        <TextField fx:id="txtUpdateToDo" layoutX="361.0" layoutY="66.0" prefHeight="28.0" prefWidth="396.0" />
+        <Button layoutX="361.0" layoutY="424.0" mnemonicParsing="false" onAction="#btnLogOut" prefHeight="26.0" prefWidth="104.0" style="-fx-background-color: #009933;" text="&lt;&lt; Log out" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND" />
+            </cursor>
+        </Button>
+        <Label fx:id="lblTitle" layoutX="362.0" layoutY="-1.0" prefHeight="18.0" prefWidth="360.0" text="Hi Kamal Welcome to To-Do List">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblId" layoutX="733.0" prefHeight="16.0" prefWidth="31.0" text="U001">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </Label>
+        <Label layoutX="292.0" layoutY="455.0" prefHeight="18.0" prefWidth="218.0" text="Designed By : Dulanjaya Sandaruwan">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </Label>
+      <ImageView fitHeight="61.0" fitWidth="63.0" layoutX="698.0" layoutY="409.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/WhatsApp%20Image%202021-05-29%20at%2023.38.19.jpeg" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
